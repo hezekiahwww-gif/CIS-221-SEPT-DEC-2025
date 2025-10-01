@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store | Modern E-commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#16a34a',     /* Green */
+            'primary-foreground': '#ffffff',
+            'background': '#f9fafb',
+            'foreground': '#1f2937',
+            'muted': '#f3f4f6',
+            'muted-foreground': '#6b7280',
+            'accent': '#dcfce7',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    * { transition: all 0.3s ease; }
+    .btn-secondary {
+      background-color: white;
+      color: #16a34a;
+      border: 1px solid #16a34a;
+    }
+    .btn-secondary:hover {
+      background-color: #dcfce7;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground">
+
+  <header class="bg-primary text-primary-foreground py-6 px-4 md:px-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl font-bold">Fashion Store</h1>
+      <nav class="hidden md:flex space-x-2">
+        <button class="px-4 py-2 rounded-full bg-primary-foreground text-primary shadow-lg font-medium">All Products</button>
+        <button class="px-4 py-2 rounded-full bg-primary/80 text-primary-foreground hover:bg-primary-foreground hover:text-primary">Women's Fashion</button>
+        <button class="px-4 py-2 rounded-full bg-primary/80 text-primary-foreground hover:bg-primary-foreground hover:text-primary">Men's Fashion</button>
+        <button class="px-4 py-2 rounded-full bg-primary/80 text-primary-foreground hover:bg-primary-foreground hover:text-primary">Accessories</button>
+      </nav>
+      <button class="md:hidden px-4 py-2 text-sm rounded-md btn-secondary">Menu</button>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Discover Your Style</h2>
+      <p class="text-xl md:text-2xl mb-8">Premium fashion for every occasion</p>
+      <button class="px-6 py-3 text-lg rounded-md btn-secondary font-semibold">Shop Now</button>
+    </div>
+  </section>
+
+  <section class="py-12 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Featured Collection</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Dress -->
+        <div class="bg-white border rounded-lg shadow-lg overflow-hidden hover:scale-[1.02]">
+          <div class="h-[300px] w-full overflow-hidden">
+            <img src="dress.jpg" alt="Floral Summer Dress" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Floral Summer Dress</h3>
+            <p class="text-muted-foreground text-sm">Lightweight fabric and beautiful floral print.</p>
+            <p class="text-2xl font-bold text-primary mt-2">Ksh8999.99</p>
+          </div>
+          <div class="p-4 border-t">
+            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 font-medium">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Blazer -->
+        <div class="bg-white border rounded-lg shadow-lg overflow-hidden hover:scale-[1.02]">
+          <div class="h-[300px] w-full overflow-hidden">
+            <img src="blazer.jpg" alt="Classic Navy Blazer" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Classic Navy Blazer</h3>
+            <p class="text-muted-foreground text-sm">Premium wool blend for formal occasions.</p>
+            <p class="text-2xl font-bold text-primary mt-2">Ksh14959.99</p>
+          </div>
+          <div class="p-4 border-t">
+            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 font-medium">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Handbag -->
+        <div class="bg-white border rounded-lg shadow-lg overflow-hidden hover:scale-[1.02]">
+          <div class="h-[300px] w-full overflow-hidden">
+            <img src="handbag.jpg" alt="Designer Leather Handbag" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Designer Leather Handbag</h3>
+            <p class="text-muted-foreground text-sm">Luxurious leather with ample compartments.</p>
+            <p class="text-2xl font-bold text-primary mt-2">Ksh27899.99</p>
+          </div>
+          <div class="p-4 border-t">
+            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 font-medium">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Shoes -->
+        <div class="bg-white border rounded-lg shadow-lg overflow-hidden hover:scale-[1.02]">
+          <div class="h-[300px] w-full overflow-hidden">
+            <img src="shoes.jpg" alt="Stylish Sneakers" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Stylish Sneakers</h3>
+            <p class="text-muted-foreground text-sm">Trendy sneakers for casual and sporty looks.</p>
+            <p class="text-2xl font-bold text-primary mt-2">Ksh7999.99</p>
+          </div>
+          <div class="https://i.ebayimg.com/images/g/Ao8AAOSwSwBkeW7B/s-l960.webp">
+            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 font-medium">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Hat -->
+        <div class="bg-white border rounded-lg shadow-lg overflow-hidden hover:scale-[1.02]">
+          <div class="h-[300px] w-full overflow-hidden">
+            <img src="hat.jpg" alt="Summer Hat" class="w-full h-full object-cover">
+          </div>
+          <div class="https://i.ebayimg.com/images/g/BPMAAeSwbgxoySSr/s-l960.webp">
+            <h3 class="text-xl font-semibold">Summer Hat</h3>
+            <p class="text-muted-foreground text-sm">Lightweight hat to keep you stylish and cool.</p>
+            <p class="text-2xl font-bold text-primary mt-2">Ksh799.99</p>
+          </div>
+          <div class="p-4 border-t">
+            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 font-medium">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-primary-foreground py-8 px-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm text-primary-foreground/80">© 2025 Fashion Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
